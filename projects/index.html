@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Verdant Structural Engineers</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+
+	<link rel="stylesheet" href="../css/animations.css" type="text/css" />
+	<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="../css/hover.css" type="text/css" />
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-81517444-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<style>
+		* { box-sizing: border-box; }
+
+		/* force scrollbar */
+		html { overflow-y: scroll; }
+
+		body {
+		font-family: sans-serif;
+		}
+
+		/* ---- isotope ---- */
+
+		.grid {
+		background: #fff;
+		}
+
+		/* clear fix */
+		.grid:after {
+		content: '';
+		display: block;
+		clear: both;
+		}
+
+		/* 2 columns by default */
+		.grid-sizer,
+		.grid-item {
+		width: 48%;
+		}
+		.gutter-sizer { 
+			width: 1%; 
+		}
+
+		@media screen and (min-width: 768px) {
+			/* ---- .grid-item ---- */
+			/* 3 columns for larger screens */
+			.grid-sizer,
+			.grid-item {
+			width: 32.667%;
+			}
+			.gutter-sizer { 
+				width: 1%; 
+			}
+		}
+
+		/* iPhone 5 */
+		/* 1 column for small screens */
+			@media (max-width: 375px) {
+				.grid-sizer,
+			.grid-item {
+			width: 100%;
+			}
+		}
+
+		.grid-item {
+		float: left;
+		margin-bottom: 10px;
+		}
+
+		.grid-item img {
+		display: block;		
+		}
+
+	</style>
+	<style>
+
+
+
+
+.button:active,
+.button.is-checked {
+  background-color: #fff!important;
+  color: black;
+}
+
+
+	</style>
+	
+</head>
+
+<body>
+	<a class="anchorTop" id="myPage"></a>
+	<div id="nav"></div>
+	<script>
+		$('#nav').load('/scripts/menu2.html')
+	</script>
+	</nav>
+	<div id="myCarousel" class="carousel main slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block w-100 img-fluid" src="../carousel/1.png" alt="PHOTO 1">			  
+				</div>
+	
+				<div class="carousel-item">
+					<img class="d-block w-100 img-fluid" src="../carousel/2.png" alt="PHOTO 2">
+				</div>
+	
+				<div class="carousel-item">
+					<img class="d-block w-100 img-fluid" src="../carousel/3.png" alt="PHOTO 3">
+				</div>
+		
+				<div class="carousel-item">
+					<img class="d-block w-100 img-fluid" src="../carousel/4.png" alt="PHOTO 4">
+				</div>
+		
+				<div class="carousel-item">
+					<img class="d-block w-100 img-fluid" src="../carousel/5.png" alt="PHOTO 5">
+				</div>
+		
+				<div class="carousel-item">
+					<img class="d-block w-100 img-fluid" src="../carousel/6.png" alt="PHOTO 6">
+				</div>
+			</div>
+		</div>
+	
+	<br>
+	<div class="container">
+			<h4 align="center">Building Type</h4>
+			<div class="filters">
+		<div class="row justify-content-center text-center">			
+			<div class="col-md-6 pb-3" >
+				<div class="button-group btn-group btn-group-sm filters-button-group" data-filter-group="type">
+					<button class="button is-checked btn btn-primary " data-filter="*">All</button>
+					<button class="button btn btn-primary " data-filter=".residential">Residential</button>
+					<button class="button btn btn-primary " data-filter=".commercial">Commercial</button>
+				</div>
+			</div>
+		</div>
+		<h4 align="center">Material</h4>
+		<div class="row justify-content-center text-center">
+				<div class="col-md-6 pt-0">
+					<div class="button-group btn-group btn-group-sm filters-button-group" data-filter-group="material">
+						<button class="button is-checked btn btn-primary " data-filter="*">All</button>
+						<button class="button btn btn-primary " data-filter=".wood">Wood</button>
+						<button class="button btn btn-primary " data-filter=".strawbale">Straw Bale</button>
+						<button class="button btn btn-primary " data-filter=".earth">Earthen Masonry</button>
+						<button class="button btn btn-primary " data-filter=".steel">Steel</button>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<br>
+
+		<div class="grid">
+			<div class="grid-sizer"></div>
+			<div class="gutter-sizer"></div>
+
+			<div class="element-item grid-item wood strawbale residential">
+				<div class="hovereffect">
+					<img class="img-fluid" src="/images/pablo3.jpg" />
+					<a href="../projects/project1/index.html">
+						<div class="overlay">
+							<h2>Project Name</h2>						
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="element-item grid-item strawbale commercial">
+				<div class="hovereffect">
+					<img class="img-fluid" src="/images/2015_ATA_Sweetwater_365_FN.jpg" />
+					<a href="http://verdantstructural.com/projects/project1">
+						<div class="overlay">
+							<h2>Project Name</h2>						
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="element-item grid-item earth">
+				<div class="hovereffect">
+					<img class="img-fluid strawbale" src="/images/ArkinZavaleta_394_FNv2.jpg" />
+					<a href="http://verdantstructural.com/projects/project1">
+						<div class="overlay">
+						<h2>Project Name</h2>						
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="element-item grid-item earth residential">
+					<div class="hovereffect">
+							<img class="img-fluid strawbale" src="/images/pablo1.jpg" />
+							<a href="http://verdantstructural.com/projects/project1">
+								<div class="overlay">
+								<h2>Project Name</h2>						
+								</div>
+							</a>
+						</div>
+			</div>
+
+			<div class="element-item grid-item commercial">				
+					<div class="hovereffect">
+							<img class="img-fluid strawbale" src="/images/water2.jpg" />
+							<a href="http://verdantstructural.com/projects/project1">
+								<div class="overlay">
+								<h2>Project Name</h2>						
+								</div>
+							</a>
+						</div>
+			</div>
+
+			<div class="element-item grid-item wood earth">
+				<div class="hovereffect">
+					<img class="img-fluid strawbale" src="/images/sweetwater.jpg" />
+					<a href="http://verdantstructural.com/projects/project1">
+						<div class="overlay">
+						<h2>Napa Residence</h2>						
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="element-item grid-item wood residential">
+				<div class="hovereffect">
+					<img class="img-fluid strawbale" src="/images/esalen3.jpg" />
+					<a href="http://verdantstructural.com/projects/project1">
+						<div class="overlay">
+						<h2>Napa Residence</h2>						
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="element-item grid-item earth commercial">
+				<div class="hovereffect">
+					<img class="img-fluid strawbale" src="/images/sweet2.jpg" />
+					<a href="http://verdantstructural.com/projects/project1">
+						<div class="overlay">
+						<h2>Napa Residence</h2>						
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="element-item grid-item earth">
+				<div class="hovereffect">
+					<img class="img-fluid strawbale" src="/images/water11.jpg" />
+					<a href="http://verdantstructural.com/projects/project1">
+						<div class="overlay">
+						<h2>Napa Residence</h2>						
+						</div>
+					</a>
+				</div>
+			</div>			
+		</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+	</div>
+	<br>
+	<br>
+	<footer class="container-fluid text-center footer">
+		<a style="color: #9d9d9d;" href="#myPage" title="To Top"><span class="fa fa-chevron-up"></span></a>
+	</footer>
+
+	<script src="../assets/js/form-validator.min.js"></script>  
+    <script src="../assets/js/contact-form-script.js"></script>
+	<script src="../js/animations.js"></script>
+	<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+	<script src='..//js/isotope.pkgd.js'></script>
+	<script src='..//js/imagesloaded.pkgd.js'></script>
+	<script>
+      // external js: isotope.pkgd.js, imagesloaded.pkgd.js
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+	columnWidth: '.grid-sizer',
+	gutter: '.gutter-sizer',
+} });
+
+
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress(function () {
+  $grid.isotope('layout');
+});
+	  //# sourceURL=pen.js
+	  
+
+
+  iso.layout();
+</script>
+
+<script>
+// external js: isotope.pkgd.js
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item'
+});
+
+// store filter for each group
+var filters = {};
+
+$('.filters').on( 'click', '.button', function( event ) {
+  var $button = $( event.currentTarget );
+  // get group key
+  var $buttonGroup = $button.parents('.button-group');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  // set filter for group
+  filters[ filterGroup ] = $button.attr('data-filter');
+  // combine filters
+  var filterValue = concatValues( filters );
+  // set filter for Isotope
+  $grid.isotope({ filter: filterValue });
+});
+
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function( event ) {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    var $button = $( event.currentTarget );
+    $button.addClass('is-checked');
+  });
+});
+  
+// flatten object by concatting values
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+
+  </script>
+
+
+</body>
+</html>

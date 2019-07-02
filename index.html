@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Verdant Structural Engineers</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/animations.css" type="text/css" />
+	
+	<link rel="stylesheet" href="css/hover.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-81517444-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+<!--
+----------------------------------------STAFF PHOTO SCRIPT - BEGIN---------------------------------------------------
+-->
+	<script>
+		var divs = ["kevinpic", "kelseypic", "wilzenpic", "rebeccapic", "coltpic", "jillpic", "ellipic", "anthonypic2", "panchopic"];
+		var visibleDivId = null;
+		function toggleVisibility(divId) {
+		  if(visibleDivId === divId) {
+			//visibleDivId = null;
+		  } else {
+			visibleDivId = divId;
+		  }
+		  hideNonVisibleDivs();
+		}
+		function hideNonVisibleDivs() {
+		  var i, divId, div;
+		  for(i = 0; i < divs.length; i++) {
+			divId = divs[i];
+			div = document.getElementById(divId);
+			if(visibleDivId === divId) {
+			  div.style.display = "block";
+			} else {
+			  div.style.display = "none";
+			}
+		  }
+		}
+	</script>
+<!--
+----------------------------------------STAFF PHOTO SCRIPT - END ---------------------------------------------------
+-->
+</head>
+
+<body>
+	<a class="anchorTop" id="myPage"></a>
+	<div id="nav"></div>
+	<script>
+		$('#nav').load('/scripts/menu.html')
+	</script>
+
+	<div id="myCarousel" class="carousel main slide" data-ride="carousel">
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img class="d-block w-100 img-fluid" src="carousel/1.png" alt="PHOTO 1">			  
+			</div>
+
+			<div class="carousel-item">
+				<img class="d-block w-100 img-fluid" src="carousel/2.png" alt="PHOTO 2">
+			</div>
+
+			<div class="carousel-item">
+				<img class="d-block w-100 img-fluid" src="carousel/3.png" alt="PHOTO 3">
+			</div>
+	
+			<div class="carousel-item">
+				<img class="d-block w-100 img-fluid" src="carousel/4.png" alt="PHOTO 4">
+			</div>
+	
+			<div class="carousel-item">
+				<img class="d-block w-100 img-fluid" src="carousel/5.png" alt="PHOTO 5">
+			</div>
+	
+			<div class="carousel-item">
+				<img class="d-block w-100 img-fluid" src="carousel/6.png" alt="PHOTO 6">
+			</div>
+		</div>
+	</div>
+	<br>
+
+<!--
+----------------------------------------WE'RE HIRING LINK - BEGIN---------------------------------------------------
+-->
+	
+		<!--<div class="container text-center">
+		<div class="alert alert-success" role="alert"> 
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<strong>We're hiring!</strong> Please follow this <a href="https://www.localwise.com/job/54427-senior-structural-design-engineer/16305-verdant-structural-engineers-berkeley-ca">link</a> to apply. 
+		</div>
+	</div>-->
+<!--
+----------------------------------------WE'RE HIRING LINK -END ---------------------------------------------------
+-->
+	<div class="container fadeProjects">
+		<a class="anchor" id="projects"></a>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+
+			<h1 style="margin: 0px; color: #007042;">FEATURED PROJECTS</h1>
+			<hr>
+			</div>
+		</div>
+		<div class="row text-center">
+			<!-- Bottom to top-->
+			<div class="col-lg-4 p-2">		
+				<div class="hovereffect">
+					<img class="img-fluid" src="images/zavaleta.jpg" alt="">
+					<div class="overlay">
+						<h2>Santa Cruz Straw Bale Home</h2>
+						<a class="info" href="#zavaletaModal" data-keyboard="true" data-toggle="modal">More Info</a>
+					</div>
+				</div>
+			</div>			
+			<div class="col-lg-4 p-2">
+				<div class="hovereffect ">
+					<img class="img-fluid" src="images/church.jpg" alt="">
+					<div class="overlay">
+					   <h2>Church of the Good Shepherd</h2>
+					   <a class="info" href="#churchModal" data-keyboard="true" data-toggle="modal">More Info</a>
+					</div>
+				</div>
+			</div>				
+			<div class="col-lg-4 p-2">
+				<div class="hovereffect">
+					<img class="img-fluid" src="images/sweetwater.jpg" alt="">
+					<div class="overlay">
+					   <h2>Healdsburg Family Residence</h2>
+					   <a class="info" href="#sweetwaterModal" data-keyboard="true" data-toggle="modal">More Info</a>
+					</div>
+				</div>
+			</div>				
+		</div>			
+		<!-- end Bottom to top-->
+		<div class="row text-center">
+			<div class="col-lg-4 p-2">		
+				<div class="hovereffect">
+					<img class="img-fluid" src="images/water11.jpg" alt="">
+					<div class="overlay">
+					   <h2>Napa Residence</h2>
+					   <a class="info" href="#waterModal" data-keyboard="true" data-toggle="modal">More Info</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 p-2">
+				<div class="hovereffect">
+					<img class="img-fluid" src="images/esalen.jpg" alt="">
+					<div class="overlay">
+					   <h2>The Esalen Lodge</h2>
+					   <a class="info" href="#esalenModal"data-keyboard="true" data-toggle="modal">More Info</a>
+					</div>
+				</div>
+			</div>
+						
+			<div class="col-lg-4 p-2">
+				<div class="hovereffect">
+					<img class="img-fluid" src="images/sanpablo.jpg" alt="">
+					<div class="overlay">
+					   <h2>2117 San Pablo - Retail</h2>
+					   <a class="info" href="#sanpabloModal"data-keyboard="true" data-toggle="modal">More Info</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<br>
+	<br>
+	
+<!--
+----------------------------------------ABOUT SECTION - BEGIN---------------------------------------------------
+-->
+	<div class="container text-center slideanim">
+		<a class="anchor" id="about"></a>
+		<div align="justify">
+			<strong><h1 align="center" style="margin-top:0px; color: #007042">ABOUT</h1></strong>
+			<hr>
+			<div class="row text-center" style="color: #007042;">
+				<div class="col-lg-4 ">
+					<h3>COLLABORATIVE</h3>
+				</div>
+				<div class="col-lg-4 ">				
+					<h3> COMPREHENSIVE</h3>
+				</div>
+				<div class="col-lg-4 ">
+					<h3> SUSTAINABLE DESIGN</h3>
+				</div>
+			</div>
+			<div class="row">
+				<p align="justify">
+					Verdant Structural Engineers (VSE), located on Codornices Creek in Berkeley, is a full service Structural Engineering firm.  VSE continues the practice of Kevin Donahue Structural Engineers (KDSE), which began providing engineering services to architects, builders and owners in 2003.  We provide structural drawings and calculation materials required for building permit submittals on a wide array of projects, as well as providing building consultation, expert advice and legal testimony. 
+				</p>					
+				<p align="justify">
+					VSE works on a large variety of projects ranging from home remodels to the new construction of schools, wineries and other commercial and public buildings.  We specialize in projects utilizing optimal and efficient use of conventional building materials as well as projects utilizing environmentally sensitive building materials and methods such as straw bale, rammed earth, cob, adobe and bamboo.  VSE continues KDSE’s history of working closely with the natural and green building community to develop standards, practices and procedures for green building practices, such as the current Straw Bale Appendix Chapter in the International Building and Residential Codes.
+				</p>
+				<p align="justify">
+					VSE practices collaborative design.  We work closely with project design and construction teams to understand the project as a complete system, so that project goals are achieved.  We balance building efficiency and design elegance with cost and environmental goals.  Above all, VSE is sensitive and responsive to clients' needs.  
+				</p>
+				<p align="justify">
+					In addition to California, VSE has practiced in the following states: Alabama, Colorado, Hawaii, New Mexico, Oregon, and Washington.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<br>
+
+<!--
+----------------------------------------ABOUT SECTION - BEGIN---------------------------------------------------
+-->
+<div class="container text-center slideanim">
+		<a class="anchor" id="publications"></a>
+		<div align="justify">
+			<strong><h1 align="center" style="margin-top:0px; color: #007042">PUBLICATIONS</h1></strong>
+			<hr>
+			<div class="row justify-content-start" >
+				<div class="col-xl-6 ">
+					<h3 class="text-center" style="color: #007042;">News and Research</h3>
+					<p>
+						<h5>Brief Description or Headling of External Article</h5>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<ul class="bullets">
+						<li><a class="link" href="http://google.com">Here is a sample Link</a></li>
+						<li><a class="link" href="http://google.com">Here is a sample Link</a></li>
+						<li><a class="link" href="http://google.com">Here is a sample Link</a></li>
+						<li><a class="link" href="http://google.com">Here is a sample Link</a></li>
+					</ul>
+					<br>
+					<p>
+						<h5>Brief Description or Headling of External Article</h5>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+				<div class="col-xl-6 ">				
+					<h3 class="text-center" style="color: #007042;">Articles</h3>
+					<div class="row py-1" >
+							<div class="col-4 ">
+								<a href="http://verdantstructural.com/template1"><img class="img-fluid" src="http://placehold.it/250x175"></a>
+							</div>
+							<div class="col-8">
+								<strong><a class= "link" href="http://verdantstructural.com/template">Title of Article</a></strong>
+								<p>
+									Located on Minnesota Street in the Dogpatch neighborhood, this project will address the shortage of student housing at UCSF without drawing on San Francisco’s rental inventory.
+								</p>
+							</div>
+					</div>
+					<div class="row py-1" >
+							<div class="col-4 ">
+								<a  href="http://verdantstructural.com/template1"><img class="img-fluid" src="http://placehold.it/250x175"></a>
+							</div>
+							<div class="col-8">
+								<strong><a class= "link" href="http://verdantstructural.com/template">Title of Article</a></strong>
+								<p>
+									Located on Minnesota Street in the Dogpatch neighborhood, this project will address the shortage of student housing at UCSF without drawing on San Francisco’s rental inventory.
+								</p>
+							</div>
+					</div>
+					<div class="row py-1" >
+							<div class="col-4 ">
+								<a  href="http://verdantstructural.com/template1"><img class="img-fluid" src="http://placehold.it/250x175"></a>
+							</div>
+							<div class="col-8">
+								<strong><a class= "link" href="http://verdantstructural.com/template">Title of Article</a></strong>
+								<p>
+									Located on Minnesota Street in the Dogpatch neighborhood, this project will address the shortage of student housing at UCSF without drawing on San Francisco’s rental inventory.
+								</p>
+							</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<br>
+
+<!--
+----------------------------------------MEET THE TEAM SECTION - BEGIN---------------------------------------------------
+-->
+	<div class="container slideanim">
+		<a class="anchor" id="team"></a>
+		<h2 class="text-center" style="color: #007042">MEET THE TEAM</h2>
+		<hr>
+		<br>
+		<div class="row justify-content-start">
+				<div class="col-lg-1"></div>
+			<div class="col-lg-4">
+				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">			 
+					<a class="nav-link active" data-toggle="pill" href="#kevin" onclick="toggleVisibility('kevinpic');">Kevin Donahue, SE - Principal</a>
+					<a class="nav-link" data-toggle="pill" href="#anthony" onclick="toggleVisibility('anthonypic2');">Anthony Dente, PE - Principal</a>
+					<a class="nav-link" data-toggle="pill" href="#kelsey" onclick="toggleVisibility('kelseypic');">Kelsey Holmes Foster, PE - Principal</a>
+					<a class="nav-link" data-toggle="pill" href="#jill" onclick="toggleVisibility('jillpic');">Jill Cleveland, PE - Engineer</a>
+					<a class="nav-link" data-toggle="pill" href="#wilzen" onclick="toggleVisibility('wilzenpic');">Wilzen Bassig, PE - Engineer</a>				
+					<a class="nav-link" data-toggle="pill" href="#colt" onclick="toggleVisibility('coltpic');">Colt Bender, EIT - Structural Designer</a>
+					<a class="nav-link" data-toggle="pill" href="#elli" onclick="toggleVisibility('ellipic');">Elli Terwiel, EIT - Structural Designer</a>
+					<a class="nav-link" data-toggle="pill" href="#pancho" onclick="toggleVisibility('panchopic');">Francisco Ordenes - Structural Designer</a>
+					<a class="nav-link" data-toggle="pill" href="#rebecca" onclick="toggleVisibility('rebeccapic');">Rebecca Anaya - Bookkeeper/Office Manager</a>				 
+				 </div>	
+			</div>
+			<div class="col-lg-1"></div>
+			
+<!--
+----------------------------------------STAFF PHOTO - BEGIN---------------------------------------------------
+-->			
+			<div class="col-lg-4">
+					<div id="kevinpic">
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/kd.png">
+					</div>
+					<div id="anthonypic2" style="display: none;" >
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/ad_new.jpg">
+					</div>
+					<div id="kelseypic" style="display: none;" >
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/khf.png">
+					</div>
+					<div id="wilzenpic" style="display: none;" >
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/wb.png">
+					</div>
+					<div id="rebeccapic" style="display: none;" >
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/ra.png">
+					</div>
+					<div id="coltpic" style="display: none;" >
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/cb.jpg">
+					</div>
+					<div id="jillpic" style="display: none;" >
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/jc.jpg">
+					</div>
+					<div id="ellipic" style="display: none;" >
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/et.jpg">
+					</div>
+					<div id="panchopic" style="display: none;" >
+						<img style="padding: 0px 0px 10px 0px;" class="img-fluid" src="images/team/fo2.jpg">
+					</div>
+			</div>
+<!--
+----------------------------------------STAFF PHOTO - END---------------------------------------------------
+-->	
+		</div>
+		<br>
+<!--
+----------------------------------------STAFF BIO - BEGIN---------------------------------------------------
+-->	
+		<div class="row">
+			<div class="tab-content">
+				<div id="kevin" class="tab-pane in active">
+					<h3 style="color: #007042">Kevin Donahue, SE - Principal</h3>
+					<p align="justify">Kevin Donahue has been practicing structural engineering for over 25 years. Kevin’s original background is in mathematics.  He earned Bachelor’s degree in Math from Brown University in 1980, and proceeded to branch out into architecture, teaching and music, performing in many well-known Bay Area music venues.  He was a visiting lecturer at Cornell University in 1986.  In 1989 he earned dual Master’s degrees in Architecture and in Structural Engineering and Mechanics from University of California, Berkeley.  Kevin began his structural engineering career with Toft & de Nevers (later Toft, de Nevers & Lee), where he also obtained his Civil and Structural Engineer licenses.  Since opening his own office in 2003, he has endeavored to marry the technical with the expressive in his engineering practice, from an interest in working with alternate and “green” building materials, to a collaborative approach to problem solving while working with his architectural and building clients.</p>
+					<p align="justify">Kevin is a contributing author to the book Design of Straw Bale Buildings by Bruce King et. al. (Green Building Press, 2006), is currently serving on a task force of structural engineers and architects charged with introducing straw bale construction to the International Building and Residential Codes, and currently resides happily in Berkeley with his wife and their daughter’s cat.</p>
+				</div>
+				<div id="anthony" class="tab-pane">
+					<h3 style="color: #007042">Anthony Dente, PE - Principal</h3>
+					<p align="justify">As a licensed Civil Engineer, Anthony is deeply passionate about effective material use for all building systems.  He strives to assist the natural and green building community by providing leadership regarding developing design procedures for natural and green materials, increasing the safe and effective options available to future engineers.</p>
+					<p align="justify">Following his graduation with a Bachelor’s degree in architecture and engineering from Pennsylvania State University, Anthony moved westward to practice structural design and in particular straw bale structural design under Kevin Donahue, SE.  Anthony also serves as a board member for the Cob Research Institute (CRI).  CRI is an organization in pursuit of making the permitting process for cob and other similar earthen matrices more accessible, with an end goal of an adopted earthen building code for North America.</p>
+					<p>Anthony can also be found throughout northern California and beyond fiddling in his bluegrass band. Although all are always invited to the shows, structural consultation can be limited while on stage.</p>
+				</div>
+				<div id="kelsey" class="tab-pane">
+					<h3 style="color: #007042">Kelsey Holmes Foster, PE - Principal</h3>
+					<p align="justify">Starting her engineering career on the East Coast, Kelsey worked on a variety of structures including a space shuttle launch pad, bridges, and dams. Since moving to California in 2014, she has focused her career on structural engineering of residential and commercial buildings, merging the skills needed to design for California-specific seismic loading with the ability to support the vision of architects and designers. She has always been inspired by sustainable design, and is excited to be a part of VSE’s work in the green building community. Kelsey holds a B.A. in economics from Mount Holyoke College, a Bachelors of Engineering from Dartmouth College, and a Masters of Engineering from Tufts University.  She is a licensed Civil Engineer in California. Outside of work, Kelsey enjoys crafts like cooking, sewing, and knitting, as well as running and hiking around the Bay Area.</p>
+				</div>
+				<div id="wilzen" class="tab-pane">
+					<h3 style="color: #007042">Wilzen Bassig, EIT - Designer</h3>
+					<p align="justify">Wilzen graduated from the University of California, Berkeley with a Bachelor’s degree in Civil Engineering and a minor in Sustainable Design.  He has been interested in building things ever since he was a little kid, whether it was out of popsicle sticks, cardboard, paper, or whatever he could find lying around.  While he was a student, he was part of the Steel Bridge Competition Team, a member of the National Civil Engineering Honors society, and president of a Filipino engineering club.</p>
+					<p align="justify">When not at work, he enjoys DIY projects, learning magic tricks, playing the guitar, and watching sports.</p>
+				</div>
+				<div id="rebecca" class="tab-pane">
+					<h3 style="color: #007042">Rebecca Anaya - Bookkeeper/Office Manager</h3>
+					<p align="justify">Rebecca enjoys supporting the team at Verdant Structural Engineers by managing office operations, bookkeeping, and human resources. Previously, Rebecca worked in a similar role at a nonprofit social enterprise. She has also provided money management services and social services to older adults, and held information management roles within the fields of publishing and higher education development.</p>
+					<p align="justify">Rebecca holds a Bachelor of Arts in Illustration from the School of Visual Arts and a Master of Social Work from San Jose State University. She has also completed coursework for a certificate in Professional Fiduciary Management for Conservators at California State University, Fullerton. She enjoys tapestry weaving and gardening in her spare time.</p>
+				</div>
+				<div id="colt" class="tab-pane">
+					<h3 style="color: #007042">Colt Bender, EIT - Designer</h3>
+					<p align="justify">Colt’s life in engineering advanced from Legos and blanket forts to concrete canoes and steel bridges while pursuing a structural engineering degree at UCSD and working as a research assistant at Scripps Institution of Oceanography.</p>
+					<p align="justify">Colt has always been interested in the bigger picture, particularly in the fundamentals that make life possible and worth living - shelter, food, water. Following these interests, he pursued a Master’s program in Natural Hazard Management in Taiwan - a country well versed in designing for complications in a dynamic world. After completing the three-year program, Colt found a home at VSE, where he strives to grow as an engineer, practicing sustainable design and learning to apply the best material and solution to the job at hand.</p>
+					<p align="justify">When not doing his best for the company and client, Colt may be found on his bike, practicing street photography, or playing with Legos with his housemate’s son.</p>
+				</div>
+				<div id="jill" class="tab-pane">
+					<h3 style="color: #007042">Jill Cleveland, PE - Engineer</h3>
+					<p align="justify">At a young age Jill’s grandfather would bring her into his office to teach her about civil engineering with his own residential design practice. He would show her plans, run through calculations, and bring her to project sites. Ever since, she has had a connection and passion for residential design.</p>
+					<p align="justify">Jill graduated from California Polytechnic State University in 2014 with a Bachelor’s degree in civil engineering, and started her career in the industrial sector. In transitioning to residential design with VSE as a recently licensed Civil Engineer, she is excited to design with alternative and sustainable building materials.</p>
+					<p align="justify">In her spare time, Jill enjoys taking fitness classes, finding new hikes, and petting any and all dogs.</p>
+				</div>
+				<div id="elli" class="tab-pane">
+					<h3 style="color: #007042">Elli Terwiel, EIT - Structural Designer</h3>
+					<p align="justify">Elli's passion for design and problem solving began early on when she would complete renovation projects with her dad back home in British Columbia, Canada.  If there is one thing she learned during this time it was "measure twice, cut once".</p>
+					<p align="justify">After accepting an athletic scholarship, Elli graduated from the University of Vermont (UVM) with an Bachelors degree in Civil Engineering and a minor in Green Building. During her time at UVM, Elli was a member of the UVM Varsity Ski Team where she helped her team win NCAA championships in 2012.  Apparently there wasn't enough on her plate at this time as she was also a member of the Canadian National Alpine Ski Team and competed for Canada at the Sochi 2014 Winter Olympic Games in the Slalom event.</p>
+					<p align="justify">Elli has since retired from her professional ski career and gained experience in Construction Management in Boston, MA and in Structural Engineering in Bend, OR.  She is very excited to join the Verdant Structural Engineers team where she can combine her love of structures and green building to come up with the best design solutions possible for the projects she works on. In her spare time, Elli is pursuing a Masters degree in Management of Innovation and Entrepreneurship from Queens University in Kingston, Ontario.</p>
+				</div>
+				<div id="pancho" class="tab-pane">
+					<h3 style="color: #007042">Francisco Ordenes, EIT - Structural Designer</h3>
+					<p align="justify">Francisco is originally from Chile, where he studied Civil Engineering at the Pontificia Universidad Catolica de Valparaiso. He became interested in engineering in high school while learning woodworking. His passion for residential projects started when he helped his father remodel his childhood home.</p>
+					<p align="justify">Before coming to the United States, Francisco worked as a Teaching Assistant for seismic engineering courses at the Pontifica Universidad Catolica de Valparaiso. He has always been interested in seismic design, inspired by personal experience in Chile, which is known for its seismic activity and the high intensity of its earthquakes. He saw the impact of these earthquakes on structures firsthand while inspecting damaged buildings in his role as Technical Assistant with his alma mater.</p>
+					<p align="justify">After moving to the United States, he has continued to work towards a career in engineering. He is very excited to have found a home at Verdant Structural Engineers, where he can perform structural design with alternative and sustainable building materials.</p>
+					<p align="justify">In his spare time, you can find Francisco (his friends call him Pancho) enjoying the outdoors, hiking and fishing around the Bay Area with his dog and wife.</p>
+				</div>
+			</div>
+		</div>		
+<!--
+----------------------------------------STAFF BIO - END---------------------------------------------------
+-->	
+	</div>
+	<br>
+	<br>
+<!--
+----------------------------------------MEET THE TEAM SECTION - END---------------------------------------------------
+-->	
+<!--
+----------------------------------------ABOUT SECTION - END---------------------------------------------------
+-->
+
+
+	<div class="container slideanim">
+		<a class="anchor" id="contact"></a>
+		<strong><h1 align="center" style="margin-top:0px; color: #007042">CONTACT</h1></strong>
+		<hr>
+		<div class="row">
+			<div class="col-md-5 ">
+				<div id="googleMap" class=""  style="height:400px;width:100%;"></div>
+				<!-- Add Google Maps -->
+				<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHeOOVbOhO1XG04CUrG8JN7HoP3wZgB1Y"></script>
+				<script>
+					var myCenter = new google.maps.LatLng(37.8827121,-122.2992912);
+
+					function initialize() {
+					var mapProp = {
+						center:myCenter,
+						zoom:15,
+						scrollwheel:false,
+						draggable:true,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+						};
+
+					var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+					var marker = new google.maps.Marker({
+						position:myCenter,
+						});
+
+						marker.setMap(map);
+						}
+
+					google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+			</div>
+			<div class="col-md-7" style="padding-top: 10px">
+				<form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Please write your message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>  
+              </div>
+				<div id="success"> </div> 
+              <button type="submit" id="submit" class="btn btn-primary float-right"></i>Send Message</button>
+
+            </form>     
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<p>Looking for a career opportunity? Submit your resume here :</p>
+				
+						<span class="nobr"><span class="fa fa-map-marker"></span> 1101 8th St. #180, Berkeley, CA &nbsp;&nbsp; </span>
+					
+						<span class="nobr"><span class="fa fa-phone"></span>&nbsp;(510)528&ndash;5394 &nbsp;&nbsp; </span>
+					
+						<span class="nobr"><span class="fa fa-envelope"></span>&nbsp;admin@verdantstructural.com</span>
+						<br>
+						<br>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<footer class="container-fluid text-center footer">
+		<a style="color: #9d9d9d;" href="#myPage" title="To Top"><span class="fa fa-chevron-up"></span></a>
+		</footer>
+
+	<script src="js/centermodal.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>  
+    <script src="assets/js/contact-form-script.js"></script>
+	<script src="js/animations.js"></script>
+
+	<!-- Modal -->
+	<div class="modal fade" id="zavaletaModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="container-fluid">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Santa Cruz Straw Bale Home</h4>
+						<h6 class="modal-title">Designed by: Arkin-Tilt Architects | Materials: Straw Bale, Wood Frame | Photographed by: Edward Caldwell</h6>
+						
+					</div>
+				</div>
+				<div class="modal-body">
+					<div id="zavaleta" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100 img-fluid" src="images/zavaleta.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/zava1.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/zava2.jpg" alt="Third slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/zava3.jpg" alt="Fourth slide">
+							</div>
+						</div><!-- /.carousel-inner -->
+						<a class="carousel-control-prev" href="#zavaleta" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#zavaleta" role="button" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+	<!-- Modal -->
+	<div class="modal fade" id="churchModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="container-fluid">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Church of the Good Shepherd</h4>
+						<h6 class="modal-title">Designed by: Bay Architects | Materials: Wood Frame Retrofit | Photographed by: Treve Johnson</h6>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div id="churchCarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100 img-fluid" src="images/church.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/church2.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/church3.jpg" alt="Third slide">
+							</div>
+						</div><!-- /.carousel-inner -->
+						<a class="carousel-control-prev" href="#churchCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#churchCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+	<!-- Modal -->
+	<div class="modal fade" id="sweetwaterModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="container-fluid">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Healdsburg Family Residence</h4>
+						<h6 class="modal-title">Designed by: Arkin-Tilt Architects | Materials: Straw Bale, Watershed Earthen Masonry Block, Wood Frame | Photographed by: Edward Caldwell</h6>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div id="sweetwaterCarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100 img-fluid" src="images/sweet1.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/sweet2.jpg" alt="Third slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/sweet3.jpg" alt="Third slide">
+							</div>
+						</div><!-- /.carousel-inner -->
+						<a class="carousel-control-prev" href="#sweetwaterCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#sweetwaterCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+	<!-- Modal -->
+	<div class="modal fade" id="waterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="container-fluid">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Napa Residence</h4>
+						<h6 class="modal-title">Designed by: Juliet Hsu | Materials: Watershed Earthen Masonry Block | <a href="http://watershedmaterials.com/">watershedmaterials.com</a></h6>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div id="waterCarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100 img-fluid" src="images/water1.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/water2.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/water3.jpg" alt="Third slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/water4.jpg" alt="Fourth slide">
+							</div>
+						</div><!-- /.carousel-inner -->
+						<a class="carousel-control-prev" href="#waterCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#waterCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+	<!-- Modal -->
+	<div class="modal fade" id="esalenModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="container-fluid">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">The Esalen Lodge</h4>
+						<h6 class="modal-title">Designed by: Arkin-Tilt Architects | Materials: Wood Frame, Steel, Concrete Masonry</h6>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div id="esalenCarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100 img-fluid" src="images/esalen.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/esalen2.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid" src="images/esalen3.jpg" alt="Third slide">
+							</div>
+						</div><!-- /.carousel-inner -->
+						<a class="carousel-control-prev" href="#esalenCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#esalenCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+	<!-- Modal -->
+	<div class="modal fade" id="sanpabloModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="container-fluid">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">2117 San Pablo - Retail</h4>
+						<h6 class="modal-title">Designed by: Kahn Design Associates | Materials: Masonry, Steel, Wood Frame | Photographed by: Ken Gutmaker</h6>
+					</div>					
+				</div>
+				<div class="modal-body">
+					<div id="sanpabloCarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100 img-fluid img-res" src="images/pablo1.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid img-res" src="images/pablo3.jpg" alt="Second slide">
+							</div>
+						</div><!-- /.carousel-inner -->
+						<a class="carousel-control-prev" href="#sanpabloCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#sanpabloCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->	
+</body>
+</html>

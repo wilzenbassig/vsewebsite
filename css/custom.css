@@ -1,0 +1,189 @@
+/* Custom fonts */
+body {
+	font: 400 15px/1.8 Lato, sans-serif;
+	color: #424245;
+}
+.navbar {
+	font-family: Lato, sans-serif;
+}
+
+
+/* Default container width is 1170px; */
+.container {
+	width: 1170px;
+	padding: 0px 0px;
+	height: auto;
+}
+
+/* Anchor Offset */
+a.anchor {
+	display: block; 
+	position: relative; 
+	top: -120px; 
+	visibility: hidden; 
+}
+a.anchorTop {
+	display: block; 
+	position: relative; 
+	top: -110px; 
+	visibility: hidden; 
+}
+
+
+/* Modal and Carousel */
+
+/* custom navbar */ 
+.navbar {
+	margin-bottom: 0px;
+	background-color: #2d2d30; /* #2d2d30 */
+	border: 0;
+	font-size: 14px !important;
+	letter-spacing: 4px;
+	min-height: 106px;	
+}
+
+.navbar-nav li,.navbar-nav a{
+	padding: 5px 5px;
+	color: #9d9d9d;
+}
+
+.navbar-collapse {
+	border-top-width: 1px;
+}
+
+.navbar-nav a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.bg-dark {
+	background-color: #2d2d30!important;
+	opacity:0.9!important;
+}
+
+
+/* Applies when screen is equal or less than specified width */
+@media (max-width: 1220px) {
+	.container {
+		width: 100%;
+		padding: 0px 30px;
+	}
+}
+/*
+@media (max-width: 767px) {
+	.navbar-right {
+		margin-top: 0px;
+	}
+}*/
+
+	#logo {
+		margin-top: 10px;
+		height: 70px;
+	}
+
+/* iPhone 5 */
+@media (max-width: 349px) {
+	#logo {
+		margin-top: 20px;
+		height: 60px;
+	}
+}
+
+/* Custom Modal */
+.modal-content  {
+-webkit-border-radius: 2px !important;
+-moz-border-radius: 2px !important;
+border-radius: 2px !important; 
+}
+.modal-body {
+	padding: 8px;
+}
+@media (min-width: 768px) {
+  .modal-xl {
+	
+   max-width:1200px;
+   max-height: 100vh;
+  }
+}
+
+.img-res {
+    max-height: 100vh;
+    margin: -113px 0;
+    padding: 113px 0;
+}
+
+.modal-body {
+    max-height: calc(100vh - 143px);
+    overflow-y: auto; }
+
+
+
+
+
+/* Main Carousel */
+.carousel.main {
+	margin-top: 106px; /* Should match .navbar min-height */
+}
+
+
+
+/* Pills */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007042;
+}
+
+.nav-pills a {
+	color: #007042;
+}
+
+/* Contact Button */
+.btn-primary {
+	color: #fff;
+    background-color: #007042 !important;
+    border-color: #007042 !important;
+}
+.btn-primary:hover {
+	color: #007042;
+    background-color: #fff !important;
+    border-color: #007042 !important;
+}
+/* Footer */
+.footer {
+	padding: 40px 0px;
+	background-color: #2d2d30
+}
+
+/* center bottom 3 col */
+/* centered columns styles */
+.nobr	{ white-space:nowrap; }
+
+
+
+.has-error .form-control{	
+	border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.has-error .help-block {
+	color: #a94442;
+}
+
+/* Bullets */
+ul.bullets {
+	list-style: none;
+}
+
+ul.bullets li::before {
+	content: "\00BB";
+	color: #007042;
+	display: inline-block; 
+	font-weight: bold;
+	width: 1em;
+	margin-left: -1em;
+}
+/* Links */
+a.link:link {color:#073d6a;}
+a.link:visited {color:#073d6a;}
+a.link:hover {color:#0074D9;}
