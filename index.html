@@ -187,12 +187,13 @@
 	</div>
 	<br>
 	<br>
+	<a class="anchor" id="about"></a>
 	
 <!--
 ----------------------------------------ABOUT SECTION - BEGIN---------------------------------------------------
 -->
 	<div class="container text-center slideanim">
-		<a class="anchor" id="about"></a>
+		
 		<div align="justify">
 			<strong><h1 align="center" style="margin-top:0px; color: #007042">ABOUT</h1></strong>
 			<hr>
@@ -226,12 +227,12 @@
 
 
 	<br>
-
+	<a class="anchor" id="publications"></a>
 <!--
 ----------------------------------------ABOUT SECTION - BEGIN---------------------------------------------------
 -->
 <div class="container text-center slideanim">
-		<a class="anchor" id="publications"></a>
+		
 		<div align="justify">
 			<strong><h1 align="center" style="margin-top:0px; color: #007042">PUBLICATIONS</h1></strong>
 			<hr>
@@ -298,12 +299,12 @@
 
 
 	<br>
-
+	<a class="anchor" id="team"></a>
 <!--
 ----------------------------------------MEET THE TEAM SECTION - BEGIN---------------------------------------------------
 -->
 	<div class="container slideanim">
-		<a class="anchor" id="team"></a>
+		
 		<h2 class="text-center" style="color: #007042">MEET THE TEAM</h2>
 		<hr>
 		<br>
@@ -424,6 +425,7 @@
 	</div>
 	<br>
 	<br>
+	<a class="anchor" id="contact"></a>
 <!--
 ----------------------------------------MEET THE TEAM SECTION - END---------------------------------------------------
 -->	
@@ -433,7 +435,7 @@
 
 
 	<div class="container slideanim">
-		<a class="anchor" id="contact"></a>
+		
 		<strong><h1 align="center" style="margin-top:0px; color: #007042">CONTACT</h1></strong>
 		<hr>
 		<div class="row">
@@ -758,7 +760,7 @@ $(function() {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top + 'px'
-        }, 1, 'swing');
+        }, 1000, 'swing');
     });
 
     // *only* if we have anchor on the url
@@ -767,7 +769,7 @@ $(function() {
         // smooth scroll to the anchor id
         $('html, body').animate({
             scrollTop: $(window.location.hash).offset().top + 'px'
-        }, 1, 'swing');
+        }, 1000, 'swing');
     }
 
 });</script>
