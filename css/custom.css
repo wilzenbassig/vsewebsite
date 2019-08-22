@@ -148,6 +148,21 @@ border-radius: 2px !important;
     background-color: #fff !important;
     border-color: #007042 !important;
 }
+
+.btn-outline-primary {
+	color: #007042;
+    background-color: #fff !important;
+    border-color: #007042 !important;
+}
+
+.btn-outline-primary:hover {
+	color: #fff;
+    background-color: #007042 !important;
+    border-color: #007042 !important;
+}
+
+
+
 /* Footer */
 .footer {
 	padding: 40px 0px;
@@ -187,3 +202,8 @@ ul.bullets li::before {
 a.link:link {color:#073d6a;}
 a.link:visited {color:#073d6a;}
 a.link:hover {color:#0074D9;}
+
+/* Nav Links */
+a.nav-link:link {color:#073d6a;}
+a.nav-link:active {color:#073d6a;}
+a.nav-link:hover {color:#0074D9;}
