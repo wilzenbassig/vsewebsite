@@ -207,3 +207,16 @@ a.link:hover {color:#0074D9;}
 a.nav-link:link {color:#073d6a;}
 a.nav-link:active {color:#073d6a;}
 a.nav-link:hover {color:#0074D9;}
+
+
+.nav-tabs{
+    display: flex;
+}
+.nav-tabs li {
+    display: flex;
+    flex: 1;
+}
+
+.nav-tabs li  a {
+    flex: 1;
+}
