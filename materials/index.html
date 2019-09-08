@@ -161,7 +161,7 @@
 
 			
 	  <br>
-		<ul class="nav nav-tabs nav-justified " role="tablist">
+		<ul class="nav nav-tabs nav-mytabs nav-justified" id="myTab" role="tablist">
 				<li class="nav-item">
 				  <a class="nav-link active" data-toggle="tab" href="#strawbale"><strong>Straw Bale</strong></a>
 				</li>
@@ -174,7 +174,7 @@
 			  </ul>
 	  
 		<!-- Tab panes -->
-		<div class="tab-content">
+		<div class="tab-content mytab-content" id="myTabContent">
 				<div id="strawbale" class="container tab-pane active"><br>
 				  <h3 style="margin: 0px; color: #007042;">Straw Bale</h3>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -379,6 +379,32 @@ function concatValues( obj ) {
 }
 
   </script>
+    <script>
+		$(document).ready(() => {
+		  let url = location.href.replace(/\/$/, "");
+		 
+		  if (location.hash) {
+			const hash = url.split("#");
+			$('#myTab a[href="#'+hash[1]+'"]').tab("show");
+			url = location.href.replace(/\/#/, "#");
+			history.replaceState(null, null, url);
+			setTimeout(() => {
+			  $(window).scrollTop(0);
+			}, 400);
+		  } 
+		   
+		  $('a[data-toggle="tab"]').on("click", function() {
+			let newUrl;
+			const hash = $(this).attr("href");
+			if(hash == "#home") {
+			  newUrl = url.split("#")[0];
+			} else {
+			  newUrl = url.split("#")[0] + hash;
+			}
+			newUrl += "/";
+			history.replaceState(null, null, newUrl);
+		  });
+		});</script>
 
 
 </body>
