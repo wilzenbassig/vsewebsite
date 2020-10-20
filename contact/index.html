@@ -88,6 +88,10 @@
 		display: block;		
 		}
 
+		#googleForm {
+		height: 2000px;
+		}
+
 	</style>
 	<style>
 
@@ -142,11 +146,12 @@
 		</div>
 	
 	<br>
-	<div class="container">
+	<div class="container h-100" >
+		<div id="googleForm">
 
 
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScAuEaOMU9lYS5EJ6R04lpXuc0oPvG9STgToMuLf2fxoYxohw/viewform?embedded=true" width="100%" height="2500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScAuEaOMU9lYS5EJ6R04lpXuc0oPvG9STgToMuLf2fxoYxohw/viewform?embedded=true" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" onLoad="topFunction(); loadCounter();">Loading…</iframe>
+		</div>
 	</div>
 	<br>
 	<br>
@@ -228,6 +233,32 @@ function concatValues( obj ) {
 }
 
   </script>
+
+
+
+<!--"responsive" div height based on iframe START-->
+<script>
+function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+
+
+  }
+  </script>
+
+<script>
+	var count = 0;
+</script>
+<script>
+	function loadCounter(){
+	count++;
+    if(count==2){
+        document.getElementById("googleForm").style.height = "500px";
+    }
+}
+</script>
+<!--"responsive" div height based on iframe END-->
+
 
 
 
